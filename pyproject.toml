@@ -1,0 +1,9 @@
+[project]
+name = "steam-games-dwh"
+version = "0.1.0"
+description = "ELT pipeline: SteamSpy API -> raw JSON -> PySpark -> Parquet -> PostgreSQL star schema"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

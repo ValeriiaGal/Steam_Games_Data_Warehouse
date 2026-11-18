@@ -1,0 +1,19 @@
+data/*
+!data/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
