@@ -94,7 +94,7 @@ ORDER BY total_reviews DESC
 LIMIT 15;
 
 
--- 6. Day-over-day change in players online (needs 2+ load dates)
+-- 6. Day-over-day change in players online
 WITH top_games AS (
     SELECT game_key
     FROM fact_game_snapshot

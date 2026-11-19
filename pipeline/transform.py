@@ -19,7 +19,6 @@ def create_spark(app_name: str = "steam-games-dwh") -> SparkSession:
         .config("spark.sql.session.timeZone", "UTC")
         .config("spark.ui.enabled", "false")
         .config("spark.ui.showConsoleProgress", "false")
-        # overwrite only the partitions being written
         .config("spark.sql.sources.partitionOverwriteMode", "dynamic")
         .getOrCreate()
     )
